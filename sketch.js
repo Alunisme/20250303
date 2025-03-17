@@ -27,6 +27,7 @@ function setup() {
   dropdown.option('第二周-淡江大學教育科技學系網頁');
   dropdown.option('第三周-Hackmd網頁');
   dropdown.option('第四周-數學小測驗');
+  dropdown.option('第五周-海草教科系網');
   dropdown.changed(handleDropdownChange); // Set the dropdown's changed event
   
   iframe = createElement('iframe');
@@ -71,6 +72,8 @@ function handleDropdownChange() {
     iframe.attribute('src', 'https://hackmd.io/@YyFThXCPSWyphIjJu2XjOQ/HJLSmYzj1x');
   } else if (selected === '第四周-數學小測驗') {
     iframe.attribute('src', 'https://alunisme.github.io/test20250310/');
+  }else if (selected === '第五周-海草教科系網') {
+    iframe.attribute('src', 'https://cfchengit.github.io/20250317/');
   }
   iframe.show(); // Show the iframe
 }
