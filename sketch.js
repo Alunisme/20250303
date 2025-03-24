@@ -28,6 +28,7 @@ function setup() {
   dropdown.option('第三周-Hackmd網頁');
   dropdown.option('第四周-數學小測驗');
   dropdown.option('第五周-海草教科系網');
+  dropdown.option('第六周-期中報告呦');
   dropdown.changed(handleDropdownChange); // Set the dropdown's changed event
   
   iframe = createElement('iframe');
@@ -74,6 +75,8 @@ function handleDropdownChange() {
     iframe.attribute('src', 'https://alunisme.github.io/test20250310/');
   }else if (selected === '第五周-海草教科系網') {
     iframe.attribute('src', 'https://alunisme.github.io/20250317/');
+  }else if (selected === '第六周-期中報告呦') {
+    iframe.attribute('src', 'https://alunisme.github.io/20250324/');
   }
   iframe.show(); // Show the iframe
 }
